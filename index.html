@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>learningresource</title>
+    <style>
+
+     dl.decision-tree dl {
+  margin:3px 0px;
+
+}
+
+dl.decision-tree dd {
+  margin:3px 0px 3px 20px;
+}
+
+dl.decision-tree dd.collapsed {
+  display:none;
+}
+
+dl.decision-tree dt:before {
+  content:"-";
+  display:inline-block;
+  width:10px;
+  font-weight:bold; font-size:65%;
+  cursor: pointer;
+}
+
+dl.decision-tree dt.collapsed:before {
+  content:"+";
+  cursor: pointer;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <br />
+        <div class="row">
+
+            <div class="col-sm-10">
+
+                <dl class="decision-tree">
+
+                    <dt>ERP <span class="badge badge-primary" id="e_total_disp"></span></dt>
+                    <dd>
+                        <dl>
+                            <dt>Microsoft Dynamics <span class="badge badge-primary" id="e_m_total_disp"></span> </dt>
+                            <dd>
+                                <dl>
+                                    <dt>SL</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Technical</dt>
+                                            <dd>
+                                                <dl>
+                                                    <dt>General</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Development</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Reporting</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Functional</dt>
+                                        </dl>
+                                    </dd>
+
+                                    <dt>Navision <span class="badge badge-primary" id="e_m_n_total_disp"></span> </dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Technical <span class="badge badge-primary" id="e_m_n_t_total_disp"></span></dt>
+                                            <dd>
+                                                <dl>
+                                                    <dt>General <span class="badge badge-primary" id="e_m_n_t_g_total_disp"></span> </dt>
+                                                    <!--<dd id="e_m_n_t_g_total_list">
+                                                        <ul style="font-size: 12px;">
+                                                            <li><a href="https://www.youtube.com/watch?v=XNLOb3nroWI"></a></li>
+                                                            <li><a href="https://www.youtube.com/watch?v=bVhMW-B5oys"></a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=49T6l4wSGNQ"></a></li>
+                                                        </ul>
+                                                    </dd>-->
+                                                </dl>
+                                                <dl>
+                                                    <dt>Development  <span class="badge badge-primary" id="e_m_n_t_d_total_disp"></span></dt>
+
+                                                    <dd id="e_m_n_t_d_total_list">
+                                                        <ul style="font-size: 12px;">
+                                                            <li><a href="https://www.youtube.com/watch?v=XNLOb3nroWI" target="_blank">Programming Microsoft Dynamics NAV | Part 1 - Introduction</a></li>
+                                                            <li><a href="https://www.youtube.com/watch?v=bVhMW-B5oys" target="_blank">Dynamics NAV C-SIDE Development 101 #2 – Tables – the fundamental component</a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=49T6l4wSGNQ" target="_blank">Dynamics NAV C/SIDE Development 101 #3 – Field basics – data types and properties</a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=dZoSCKFbkEU" target="_blank">C/SIDE Development 101 #4 – Pages – the users gateway to data in NAV</a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=_-zzOYk9Xx0" target="_blank">C/SIDE Development 101 #5 – Field – keys, SIFT and more</a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=qRug5ENP4PE&t=616s" target="_blank">C/SIDE Development 101 #8 – C/AL – Where does C/AL hide</a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=oPEb5wx0bRQ" target="_blank">C/Side - Design Patterns Master Class for Microsoft Dynamics NAV - Part I</a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=mzO2c-BMXog" target="_blank">C/Side - Design Patterns Master Class for Microsoft Dynamics NAV - Part II</a></li>
+
+
+                                                        </ul>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Reporting <span class="badge badge-primary" id="e_m_n_t_r_total_disp"></span></dt>
+                                                    <dd id="e_m_n_t_r_total_list">
+                                                        <ul style="font-size: 12px;">
+                                                            <li><a href="https://www.youtube.com/watch?v=dhZDaUw8RNg&t=1018s">C/Side Development #6 - Reports</a></li>
+                                                            <!--<li><a href="https://www.youtube.com/watch?v=bVhMW-B5oys"></a></li>
+                                                            <li> <a href="https://www.youtube.com/watch?v=49T6l4wSGNQ"></a></li>-->
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Functional</dt>
+                                        </dl>
+                                    </dd>
+                                    <dt>AX</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Technical</dt>
+                                            <dd>
+                                                <dl>
+                                                    <dt>General</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Development</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Reporting</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Functional</dt>
+                                        </dl>
+                                    </dd>
+                                    <dt>Great Plains (GP)</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Technical</dt>
+                                            <dd>
+                                                <dl>
+                                                    <dt>General</dt>
+                                                    <dd>
+
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Development</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Reporting</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Functional</dt>
+                                        </dl>
+                                    </dd>
+                                    <dt>365 Business Central</dt>
+                                    <dd>
+                                        <dl>
+                                            <dt>Technical</dt>
+                                            <dd>
+                                                <dl>
+                                                    <dt>General</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Development</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Reporting</dt>
+                                                    <dd>
+
+                                                    </dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Functional</dt>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </dd>
+                    <dt>CRM</dt>
+                    <dd>
+                        <dl>
+                            <!--<dt></dt>
+                            <dd></dd>
+                            <dt></dt>
+                            <dd></dd>
+                            <dt></dt>
+                            <dd></dd>-->
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="text-muted" style="font-weight:bold;"> This is an initiative to bring all the rich <span style="text-decoration:underline">resources</span> to learn Microsoft's ERP and CRM products <span style="text-decoration:underline">in one place! </span></span>
+                        <hr />
+                        <div>
+                            <h6 class="text-center" style="text-decoration:underline;">Future Development Plan</h6>
+                            <p>
+
+                            <p class="text-justify text-muted" style="font-size:13px;"><i class="fas fa-circle"></i> Power this with Mongodb as its document store at the backend. (Currently this is a static site and I hardcode all the resources. Yikes! But hey, we are just starting out! <i class="far fa-smile"></i> ).</p>
+                            <p class="text-justify text-muted" style="font-size:13px;"><i class="fas fa-circle"></i> Allow contributors to submit resources.</p>
+                            <p class="text-justify text-muted" style="font-size:13px;"><i class="fas fa-circle"></i> An extension to this app to moderate the submissions before they get posted live. </p>
+                            <p class="text-justify text-muted" style="font-size:13px;"><i class="fas fa-circle"></i> Well tested UI for all browsers and devices. (I put this site together overnight hence the choppy user experience and bland color palette. Sorry!) </p>
+
+                            <hr />
+                            <p class="text-justify text-muted">If you are interested in contributing to this initiative in any way or have any suggestions, <i class="far fa-envelope"></i> me at  mesamabbas@hotmail.com </p>
+                            </p>
+                            <hr />
+                            <p class="text-justify text-muted" style="font-size:13px; font-style:italic">
+                                DISCLAIMER: I am NOT affliated with the resources posted here, nor am I the owner of the content/resources. All credits to the respective publisher(s), creator(s), author(s), owner(s) of the resources/contents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <br />
+
+
+        <nav class="navbar fixed-bottom" style="background-color: #F0F0F0;">
+            <div style=" font-size: 12px;" class="text-muted mx-auto">Built with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/mesamzahid/" style="font-style: italic; bold; color: #0020D7; ">Mesam A.</a></div>
+
+        </nav>
+    </div>
+
+
+
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script>
+    <script>
+  $("dl.decision-tree dd, dl.decision-tree dt").addClass("collapsed");
+  $("dl.decision-tree dt").click(function(event) {
+    $(event.target).toggleClass("collapsed");
+    $(event.target).next().toggleClass("collapsed");
+  });
+
+
+  $('document').ready(function(){
+      var e_m_n_t_d_total   = $("#e_m_n_t_d_total_list > ul > li").length;
+  $('#e_m_n_t_d_total_disp').text(e_m_n_t_d_total);
+
+      var e_m_n_t_r_total   = $("#e_m_n_t_r_total_list > ul > li").length;
+  $('#e_m_n_t_r_total_disp').text(e_m_n_t_r_total);
+
+      var e_m_n_t_g_total   = $("#e_m_n_t_g_total_list > ul > li").length;
+  $('#e_m_n_t_g_total_disp').text(e_m_n_t_g_total);
+
+    var e_m_n_t_total = e_m_n_t_d_total + e_m_n_t_r_total + e_m_n_t_g_total;
+    $('#e_m_n_t_total_disp').text(e_m_n_t_total);
+    $('#e_m_n_total_disp').text(e_m_n_t_total);
+    $('#e_m_total_disp').text(e_m_n_t_total);
+    $('#e_total_disp').text(e_m_n_t_total);
+
+   
+  });
+       
+    </script>
+</body>
+</html>
